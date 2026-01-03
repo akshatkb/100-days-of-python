@@ -17,3 +17,17 @@ print(3.14243)
 # Boolean
 print(True)
 print(False)
+
+# length and type
+len("124442")
+type("abc")
+
+# type conversion
+str("abc")
+int("123")
+float("123.456")
+
+# round off
+print(round(1.433534, 3))
+
+
