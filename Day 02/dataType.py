@@ -28,6 +28,7 @@ int("123")
 float("123.456")
 
 # round off
-print(round(1.433534, 3))
+roundVal = round(1.433534, 3)
+print(roundVal)
 
 
