@@ -26,6 +26,22 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 /______/______/______/______/______/______/______/______/______/______/[TomekK]
 *******************************************************************************
 ''')
-print("Welcome to Treasure Island.")
-print("Your mission is to find the treasure.")
-choice1 = input("You\'re at a crossroad.")
+print("🏝️ Welcome to Treasure Island!")
+choice_1 = input("Your mission is to find the hidden treasure. Choose a direction (Left or Right): ").lower()
+
+if choice_1 == "left":
+    choice_2 = input("You reach a lake. Do you want to Swim or Wait? ").lower()
+    if choice_2 == "wait":
+        choice_3 = input("You see three doors ahead. Choose one: Yellow, Blue, or Red: ").lower()
+        if choice_3 == "red":
+            print("🔥 Burned by fire! Game Over.")
+        elif choice_3 == "blue":
+            print("🐺 Eaten by beasts! Game Over.")
+        elif choice_3 == "yellow":
+            print("🏆 Congratulations! You found the treasure and won!")
+        else:
+            print("❌ Invalid choice. Game Over.")
+    else:
+        print("🐟 Attacked by a giant trout! Game Over.")
+else:
+    print("🕳️ You fell into a deep hole. GAME OVER!")
